@@ -5,7 +5,7 @@
  * Description:       QwenCloud provider for the WordPress AI Client.
  * Requires at least: 7.0
  * Requires PHP:      7.4
- * Version:           1.0.0
+ * Version:           0.0.1
  * Author:            Bestony
  * Author URI:        https://github.com/bestony
  * License:           GPL-2.0-or-later
@@ -28,22 +28,6 @@ if (!defined('ABSPATH')) {
 }
 
 require_once __DIR__ . '/src/autoload.php';
-
-/**
- * Loads the plugin's translations.
- *
- * @return void
- */
-function load_textdomain(): void
-{
-    load_plugin_textdomain(
-        'ai-provider-for-qwencloud',
-        false,
-        dirname(plugin_basename(__FILE__)) . '/languages'
-    );
-}
-
-add_action('init', __NAMESPACE__ . '\\load_textdomain');
 
 /**
  * Registers the provider with the AI Client.

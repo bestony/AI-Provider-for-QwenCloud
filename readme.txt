@@ -3,7 +3,7 @@ Contributors:      bestony
 Tags:              ai, connector, qwen, qwencloud, artificial-intelligence, vision
 Requires at least: 7.0
 Tested up to:      7.1
-Stable tag:        1.0.0
+Stable tag:        0.0.1
 Requires PHP:      7.4
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -168,14 +168,16 @@ This service is provided by Alibaba Cloud:
 * Platform and documentation: [https://www.qwencloud.com/](https://www.qwencloud.com/)
 * API documentation: [https://docs.qwencloud.com/](https://docs.qwencloud.com/)
 * First API call: [https://docs.qwencloud.com/developer-guides/getting-started/first-api-call](https://docs.qwencloud.com/developer-guides/getting-started/first-api-call)
+* Terms of service: [https://www.qwencloud.com/legal/terms-of-service](https://www.qwencloud.com/legal/terms-of-service)
+* Privacy policy: [https://www.qwencloud.com/legal/privacy](https://www.qwencloud.com/legal/privacy)
 
 == Changelog ==
 
-= 1.0.0 =
+= 0.0.1 =
 * Initial release: text generation, chat history, tool calling, structured output, vision input and
   text-to-image generation with QwenCloud models.
 
 == Upgrade Notice ==
 
-= 1.0.0 =
+= 0.0.1 =
 Initial release.

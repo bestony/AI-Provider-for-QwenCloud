@@ -10,6 +10,10 @@ declare(strict_types=1);
 
 namespace QwenCloud\AiProvider\Models;
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 use QwenCloud\AiProvider\Provider\QwenCloudProvider;
 use QwenCloud\AiProvider\Util\QwenCloudConfig;
 use WordPress\AiClient\Providers\Http\DTO\Request;

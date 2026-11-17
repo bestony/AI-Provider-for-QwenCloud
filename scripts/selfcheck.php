@@ -23,9 +23,13 @@ $root = dirname(__DIR__);
 
 /*
  * The plugin's autoloader refuses to run outside WordPress (Plugin Check requires a direct-access
- * guard on it), so this harness defines ABSPATH the way a WordPress test bootstrap does.
+ * guard on it), so this harness defines ABSPATH the way a WordPress test bootstrap does. Direct web
+ * access is not supported for a CLI-only harness and exits immediately.
  */
 if (!defined('ABSPATH')) {
+    if ('cli' !== PHP_SAPI) {
+        exit; // Exit if accessed directly.
+    }
     define('ABSPATH', $root . '/');
 }
 
@@ -1047,20 +1051,6 @@ function use_qwencloud_plugin_checks(): void
             return basename($file);
         }
 
-        /**
-         * Records that translations were loaded; the harness has no .mo files to load.
-         *
-         * @param string $domain The text domain.
-         * @param bool $deprecated Unused.
-         * @param string|null $path The languages directory.
-         * @return bool Always true.
-         */
-        function load_plugin_textdomain(string $domain, bool $deprecated = false, ?string $path = null): bool
-        {
-            $GLOBALS['qwencloud_textdomain'] = [$domain, $path];
-
-            return true;
-        }
     }
 
     require dirname(__DIR__) . '/ai-provider-for-qwencloud.php';
@@ -1187,20 +1177,6 @@ function use_qwencloud_plugin_checks(): void
     );
     putenv('QWENCLOUD_IMAGE_MODEL');
 
-    // --- Translations. --------------------------------------------------------------------------
-    $callbacks = $GLOBALS['qwencloud_actions']['init'][10] ?? [];
-    check($callbacks !== [], 'the text domain is loaded on init');
-    foreach ($callbacks as $callback) {
-        $callback();
-    }
-    check(
-        ($GLOBALS['qwencloud_textdomain'][0] ?? null) === 'ai-provider-for-qwencloud',
-        'the text domain matches the plugin header'
-    );
-    check(
-        ($GLOBALS['qwencloud_textdomain'][1] ?? null) === basename($GLOBALS['qwencloud_plugin_dir']) . '/languages',
-        'translations are loaded from the plugin languages directory'
-    );
 }
 
 // --- Result. -----------------------------------------------------------------------------------

@@ -17,6 +17,10 @@ declare(strict_types=1);
 
 namespace QwenCloud\AiProvider\Util;
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 use WordPress\AiClient\AiClient;
 use WordPress\AiClient\Providers\Http\DTO\RequestOptions;
 
@@ -27,7 +31,7 @@ final class QwenCloudConfig
      *
      * @var string
      */
-    public const VERSION = '1.0.0';
+    public const VERSION = '0.0.1';
 
     /**
      * The provider ID used by the SDK registry, the Connectors option name and the filter tuples.

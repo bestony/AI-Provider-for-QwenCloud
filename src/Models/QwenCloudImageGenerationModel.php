@@ -10,6 +10,10 @@ declare(strict_types=1);
 
 namespace QwenCloud\AiProvider\Models;
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 use QwenCloud\AiProvider\Util\QwenCloudModelCatalog;
 use WordPress\AiClient\Files\Enums\MediaOrientationEnum;
 use WordPress\AiClient\Providers\Http\Exception\ResponseException;

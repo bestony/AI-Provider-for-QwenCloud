@@ -10,6 +10,10 @@ declare(strict_types=1);
 
 namespace QwenCloud\AiProvider\Provider;
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 use QwenCloud\AiProvider\Metadata\QwenCloudModelMetadataDirectory;
 use QwenCloud\AiProvider\Models\QwenCloudImageGenerationModel;
 use QwenCloud\AiProvider\Models\QwenCloudTextGenerationModel;

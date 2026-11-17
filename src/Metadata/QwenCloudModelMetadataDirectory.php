@@ -10,6 +10,10 @@ declare(strict_types=1);
 
 namespace QwenCloud\AiProvider\Metadata;
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 use QwenCloud\AiProvider\Provider\QwenCloudProvider;
 use QwenCloud\AiProvider\Util\QwenCloudConfig;
 use QwenCloud\AiProvider\Util\QwenCloudModelCatalog;
