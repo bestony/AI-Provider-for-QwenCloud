@@ -101,8 +101,8 @@ final class QwenCloudImageGenerationModel extends AbstractOpenAiCompatibleImageG
         $url = $choiceData['url'] ?? null;
         if (!is_string($url) || preg_match('#^https?://#i', $url) !== 1) {
             throw ResponseException::fromInvalidData(
-                $this->providerMetadata()->getName(),
-                "data[{$index}].url",
+                'QwenCloud',
+                'data[' . (int) $index . '].url',
                 'The value must be an absolute HTTP(S) URL.'
             );
         }
