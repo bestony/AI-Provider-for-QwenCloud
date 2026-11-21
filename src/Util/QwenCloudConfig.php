@@ -31,7 +31,7 @@ final class QwenCloudConfig
      *
      * @var string
      */
-    public const VERSION = '0.0.1';
+    public const VERSION = '0.0.2';
 
     /**
      * The provider ID used by the SDK registry, the Connectors option name and the filter tuples.

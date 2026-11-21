@@ -3,7 +3,7 @@ Contributors:      bestony
 Tags:              ai, connector, qwen, qwencloud, artificial-intelligence, vision
 Requires at least: 7.0
 Tested up to:      7.1
-Stable tag:        0.0.1
+Stable tag:        0.0.2
 Requires PHP:      7.4
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -173,11 +173,18 @@ This service is provided by Alibaba Cloud:
 
 == Changelog ==
 
+= 0.0.2 =
+* Renamed plugin to Bestony AI Provider for QwenCloud (`bestony-ai-provider-for-qwencloud`).
+* Fixed image response error formatting to avoid unescaped dynamic values in `ResponseException`.
+
 = 0.0.1 =
 * Initial release: text generation, chat history, tool calling, structured output, vision input and
   text-to-image generation with QwenCloud models.
 
 == Upgrade Notice ==
+
+= 0.0.2 =
+Renamed plugin to Bestony AI Provider for QwenCloud (`bestony-ai-provider-for-qwencloud`) and fixed image response error formatting.
 
 = 0.0.1 =
 Initial release.
