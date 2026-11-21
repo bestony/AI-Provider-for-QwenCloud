@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       AI Provider for QwenCloud
+ * Plugin Name:       Bestony AI Provider for QwenCloud
  * Plugin URI:        https://github.com/bestony/AI-Provider-for-QwenCloud
  * Description:       QwenCloud provider for the WordPress AI Client.
  * Requires at least: 7.0
@@ -10,7 +10,7 @@
  * Author URI:        https://github.com/bestony
  * License:           GPL-2.0-or-later
  * License URI:       https://spdx.org/licenses/GPL-2.0-or-later.html
- * Text Domain:       ai-provider-for-qwencloud
+ * Text Domain:       bestony-ai-provider-for-qwencloud
  *
  * @package QwenCloud\AiProvider
  */

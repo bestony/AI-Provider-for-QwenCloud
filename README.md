@@ -1,4 +1,4 @@
-# AI Provider for QwenCloud
+# Bestony AI Provider for QwenCloud
 
 [QwenCloud](https://www.qwencloud.com/) as a provider for the WordPress AI Client: text, vision and
 text-to-image generation with Qwen, DeepSeek, Kimi and GLM models through the OpenAI-compatible
@@ -28,7 +28,7 @@ text-to-image generation with Qwen, DeepSeek, Kimi and GLM models through the Op
 ## Install
 
 Download the zip from [Releases](../../releases) and upload it through **Plugins → Add New → Upload
-Plugin**, or copy the plugin folder to `wp-content/plugins/ai-provider-for-qwencloud/`. Activate it,
+Plugin**, or copy the plugin folder to `wp-content/plugins/bestony-ai-provider-for-qwencloud/`. Activate it,
 then open **Settings → Connectors**, open the QwenCloud card and paste your API key.
 
 ## Configuration
@@ -54,7 +54,7 @@ Optional settings are environment variables or PHP constants:
 | `QWENCLOUD_REQUEST_TIMEOUT` | `120` | Model list and text request timeout, seconds |
 | `QWENCLOUD_IMAGE_REQUEST_TIMEOUT` | `600` | Image request timeout, seconds |
 | `QWENCLOUD_CONNECT_TIMEOUT` | `10` | Connection timeout, seconds |
-| `QWENCLOUD_USER_AGENT` | `ai-provider-for-qwencloud/<version>` | Optional User-Agent override |
+| `QWENCLOUD_USER_AGENT` | `bestony-ai-provider-for-qwencloud/<version>` | Optional User-Agent override |
 
 There is no database-backed settings page: the base URL and the rest are deployment-level overrides.
 

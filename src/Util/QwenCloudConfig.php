@@ -300,9 +300,9 @@ final class QwenCloudConfig
     {
         $configured = trim(self::env('QWENCLOUD_USER_AGENT'));
         if ($configured === '') {
-            return 'ai-provider-for-qwencloud/' . self::VERSION;
+            return 'bestony-ai-provider-for-qwencloud/' . self::VERSION;
         }
 
-        return preg_replace('/[\r\n]+/', ' ', $configured) ?: 'ai-provider-for-qwencloud/' . self::VERSION;
+        return preg_replace('/[\r\n]+/', ' ', $configured) ?: 'bestony-ai-provider-for-qwencloud/' . self::VERSION;
     }
 }

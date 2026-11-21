@@ -74,7 +74,7 @@ final class QwenCloudProvider extends AbstractApiProvider
         throw new RuntimeException(
             sprintf(
                 /* translators: %s: model ID. */
-                esc_html__('The model "%s" has no supported capability for QwenCloud.', 'ai-provider-for-qwencloud'),
+                esc_html__('The model "%s" has no supported capability for QwenCloud.', 'bestony-ai-provider-for-qwencloud'),
                 esc_html($modelMetadata->getId())
             )
         );
@@ -99,7 +99,7 @@ final class QwenCloudProvider extends AbstractApiProvider
         if (version_compare(AiClient::VERSION, '1.2.0', '>=')) {
             $description = 'Text, vision and image generation with QwenCloud models.';
             $args[] = function_exists('__')
-                ? __('Text, vision and image generation with QwenCloud models.', 'ai-provider-for-qwencloud')
+                ? __('Text, vision and image generation with QwenCloud models.', 'bestony-ai-provider-for-qwencloud')
                 : $description;
         }
 

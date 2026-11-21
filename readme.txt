@@ -1,4 +1,4 @@
-=== AI Provider for QwenCloud ===
+=== Bestony AI Provider for QwenCloud ===
 Contributors:      bestony
 Tags:              ai, connector, qwen, qwencloud, artificial-intelligence, vision
 Requires at least: 7.0
@@ -35,7 +35,7 @@ generation.
 
 == Installation ==
 
-1. Upload the plugin files to `/wp-content/plugins/ai-provider-for-qwencloud/`.
+1. Upload the plugin files to `/wp-content/plugins/bestony-ai-provider-for-qwencloud/`.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to Settings → Connectors, open the QwenCloud card and paste your API key — or define it outside
    the database (see Configuration).

@@ -254,7 +254,7 @@ check(
 );
 check(QwenCloudConfig::getConnectTimeout() >= 5.0, 'the connect timeout is long enough');
 check(
-    QwenCloudConfig::getUserAgent() === 'ai-provider-for-qwencloud/' . QwenCloudConfig::VERSION,
+    QwenCloudConfig::getUserAgent() === 'bestony-ai-provider-for-qwencloud/' . QwenCloudConfig::VERSION,
     'the User-Agent identifies the plugin and its version'
 );
 check(!QwenCloudConfig::hasCredentials(), 'no credentials unless one is configured');
@@ -1053,7 +1053,7 @@ function use_qwencloud_plugin_checks(): void
 
     }
 
-    require dirname(__DIR__) . '/ai-provider-for-qwencloud.php';
+    require dirname(__DIR__) . '/bestony-ai-provider-for-qwencloud.php';
 
     /*
      * The SDK resolves a PSR-18 client through HTTPlug discovery when a provider is registered. That

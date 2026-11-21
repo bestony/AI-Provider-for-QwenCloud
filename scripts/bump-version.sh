@@ -28,7 +28,7 @@ case "$part" in
         ;;
 esac
 
-plugin='ai-provider-for-qwencloud.php'
+plugin='bestony-ai-provider-for-qwencloud.php'
 config='src/Util/QwenCloudConfig.php'
 
 current=$(perl -ne 'print $1 if /^ \* Version:\s+([\d.]+)/' "$plugin")
